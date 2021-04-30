@@ -19,17 +19,17 @@ First, you need to decorate all your classes, then just instantiate OO2RDF and c
 
 Person.cs
 ```csharp
-    [OO2RDFClass(Name = "http://xmlns.com/foaf/0.1/Person", SubUrl = "person")](OO2RDFClass(Name-=-_http___xmlns.com_foaf_0.1_Person_,-SubUrl-=-_person_))
+    [OO2RDFClass(Name = "http://xmlns.com/foaf/0.1/Person", SubUrl = "person")]
     public class Person
     {      
 
-        [OO2RDFProperty(Name = "http://xmlns.com/foaf/0.1/name")](OO2RDFProperty(Name-=-_http___xmlns.com_foaf_0.1_name_))
+        [OO2RDFProperty(Name = "http://xmlns.com/foaf/0.1/name")]
         public string Name { get; set; }
 
-        [OO2RDFProperty(Name = "http://xmlns.com/foaf/0.1/age")](OO2RDFProperty(Name-=-_http___xmlns.com_foaf_0.1_age_))
+        [OO2RDFProperty(Name = "http://xmlns.com/foaf/0.1/age")]
         public int Age { get; set; }
 
-        [OO2RDFProperty(Name = "http://xmlns.com/foaf/0.1/knows")](OO2RDFProperty(Name-=-_http___xmlns.com_foaf_0.1_knows_))
+        [OO2RDFProperty(Name = "http://xmlns.com/foaf/0.1/knows")]
         public List<Person> Knows { get; set; }
     }
 ```
